@@ -1,0 +1,109 @@
+:root {
+    --background: #fafafa;
+    --top-background: #fafafa;
+    --top-border: #cbcbcb;
+    --icon-color: #777;
+    --front-side: #d6d4d6;
+    --front-side-border: #bcbcbc;
+    --button-background: #000000;
+    --top-hover: #f7f7f7;
+}
+
+
+body {
+    font-family: monospace;
+    background-color: var(--background);
+}
+
+a {
+    font-size: 17px;
+    color: black;
+}
+
+.main-container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+
+.categories-btn {
+    padding: 6px 14px;
+    text-decoration: none;
+    font-size: 9px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: var(--button-background);
+}
+
+.categories-btn:hover {
+    background-color: #2b2a2a;
+    box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(29, 41, 63, 0.25), 0px 0px 0px 2px rgba(41, 48, 62, 0.5);
+}
+
+.categories-btn:focus {
+    background-color: #2b2a2a;
+    box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(29, 41, 63, 0.25), 0px 0px 0px 2px rgba(41, 48, 62, 0.5);
+}
+
+.all-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    width: 100%;
+}
+
+.all-table table {
+    border: 1px solid #dededf;
+    height: 100%;
+    width: 60%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+}
+
+.all-table caption {
+    caption-side: top;
+    text-align: left;
+}
+
+.all-table th {
+    border: 1px solid #dededf;
+    background-color: #eceff1;
+    color: #000000;
+    word-break: break-word;
+    padding: 5px;
+}
+
+.all-table td {
+    border: 1px solid #dededf;
+    background-color: #ffffff;
+    color: #000000;
+    word-break: break-word;
+    padding: 5px;
+}
+
+@media (max-width: 480px) {
+    table {
+      font-size: 10px;
+    }
+    .all-table table {
+        border: 1px solid #dededf;
+        height: 100%;
+        width: 90%;
+        table-layout: fixed;
+        border-collapse: collapse;
+        border-spacing: 1px;
+        text-align: left;
+    }
+  }
